@@ -1,0 +1,221 @@
+
+body {
+  background-color: #333;
+}
+
+.organigrama * {
+  margin: 0px;
+  padding: 0px;
+}
+
+.organigrama ul {
+	padding-top: 20px;
+  position: relative;
+}
+
+.organigrama li {
+	float: left;
+  text-align: center;
+	list-style-type: none;
+	padding: 20px 5px 0px 5px;
+  position: relative;
+}
+
+.organigrama li::before, .organigrama li::after {
+	content: '';
+	position: absolute;
+  top: 0px;
+  right: 50%;
+	border-top: 1px solid #f80;
+	width: 50%;
+  height: 20px;
+}
+
+.organigrama li::after{
+	right: auto;
+  left: 50%;
+	border-left: 1px solid #f80;
+}
+
+.organigrama li:only-child::before, .organigrama li:only-child::after {
+	display: none;
+}
+
+.organigrama li:only-child {
+  padding-top: 0;
+}
+
+.organigrama li:first-child::before, .organigrama li:last-child::after{
+	border: 0 none;
+}
+
+.organigrama li:last-child::before{
+	border-right: 1px solid #f80;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+	border-radius: 0 5px 0 0;
+}
+
+.organigrama li:first-child::after{
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+	border-radius: 5px 0 0 0;
+}
+
+.organigrama ul ul::before {
+	content: '';
+	position: absolute;
+  top: 0;
+  left: 50%;
+	border-left: 1px solid #f80;
+	width: 0;
+  height: 20px;
+}
+
+.organigrama li a {
+	border: 1px solid #f80;
+	padding: 1em 0.75em;
+	text-decoration: none;
+	color: #333;
+  background-color: rgba(255,255,255,0.6);
+	font-family: arial, verdana, tahoma;
+	font-size: 0.85em;
+	display: table-cell;
+  vertical-align: middle;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.organigrama li:only-child > a {
+  display: inline-block;
+}
+
+.organigrama li a:hover {
+	border: 1px solid #fff;
+	color: #ddd;
+  background-color: rgba(255,128,0,0.7);
+}
+
+.organigrama > ul > li > a {
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 2em;
+}
+
+.organigrama > ul > li > ul > li > a {
+  width: 8em;
+  height: 6em;
+}
+
+/***************************
+Responsive section by tablet
+***************************/
+@media screen and (max-width:768px) {
+  body {
+    width: 50%;
+  }
+  .organigrama * {
+    margin: 0;
+    padding: 0;
+  }
+  .organigrama {
+  }
+  .organigrama ul, .organigrama ul ul {
+    padding-top: 0px;
+    left: 50%;
+    width: 160px;
+  }
+  .organigrama ul ul::before {
+    display: none;
+  }
+  .organigrama ul li {
+    float: none;
+    text-align: left;
+    padding: 10px 0px;
+    margin: 0px;
+  }
+  .organigrama ul li::before {
+    right: auto;
+    border: none;
+  }
+  .organigrama ul li:last-child::before {
+    right: auto;
+    border-right: none;
+  }
+  .organigrama ul li::after{
+    left: auto;
+    border: none;
+  }
+  .organigrama ul li ul li a {
+    display: inline-block;
+    padding: 16px;
+    margin-left: 20px;
+    width: 280px;
+    height: 46px;
+  }
+  .organigrama > ul > li > a {
+    padding: 1.5em;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .organigrama ul li::before {
+    top: -51px;
+    left: 0px;
+    border-bottom: 1px solid #f80;
+    border-left: 1px solid #f80;
+    width: 20px;
+    height: 100px;
+  }
+  .organigrama ul li:first-child::before {
+    top: -10px;
+    left: 0px;
+    border-bottom: 1px solid #f80;
+    border-left: 1px solid #f80;
+    width: 20px;
+    height: 3.6em;
+  }
+}
+
+/********************************
+Responsive section by smartphones
+*********************************/
+@media screen and (max-width:414px) {
+  body {
+    width: 100%;
+  }
+  .organigrama ul {
+    left: 0%;
+    width: 170px;
+  }
+  .organigrama ul ul {
+    left: 30%;
+    width: 300px;
+  }
+  .organigrama ul li ul li a {
+    font-size: 16px;
+    padding: 16px;
+    margin-left: 20px;
+    width: 230px;
+    height: 70px;
+  }
+  .organigrama > ul > li > a {
+    padding: 1.5em;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .organigrama ul li::before {
+    top: -71px;
+    width: 20px;
+    height: 124px;
+  }
+  .organigrama ul li:first-child::before {
+    top: -10px;
+    width: 20px;
+    height: 62px;
+  }
+}
+

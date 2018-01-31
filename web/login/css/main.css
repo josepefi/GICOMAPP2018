@@ -1,0 +1,30 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+footer{position:absolute;bottom: 0; width:100%;}
+
+
+
+
+
+footer li {
+    float: left;
+    font-size: 12px;
+    margin-right: 20px;
+    list-style:none;
+}
+#copyright{clear:both;}
+
+@media (max-width: 767px) {footer{position:relative;bottom: 0; width:100%;}}
+
+
+
+
+
+
+
+
+
+

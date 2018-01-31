@@ -1,0 +1,354 @@
+body{
+	font-family: 'Fjalla One', sans-serif; 
+	letter-spacing: 0.5px;
+}
+
+.profesion{
+	background-color: rgb(2, 108, 179);
+  	color: white;
+  	padding-bottom: 5px;
+  	padding-top: 5px;
+  	text-align: center;
+}
+
+.equipo{
+  	background-color: white;
+	margin-top: 47.5px;
+	margin-bottom: 47.5px;
+	-webkit-box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.75);
+	margin-left: 47.5px;
+	margin-right: 47.5px;
+}
+
+.laboral {
+  background-color: white;
+  margin-top: 47.5px;
+  margin-bottom: 47.5px;
+  -webkit-box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.75);
+  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+
+.navbar-default {
+  	background-color: #026CB3;
+}
+
+.slider-caption {
+  	position: absolute;
+  	top: 0;
+  	z-index: 999;
+  	left: 0%;
+  	top: 84.4%;
+  	background: rgba(2, 108, 179, 0.6);
+  	padding: 0.5em;
+  	width: 100%;
+}
+
+.navbar-default .navbar-brand {
+	color: #777777;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+#enlaceblanco{
+	color:#FFF;
+}
+
+.footer {
+	background: rgb(48, 117, 166);
+	color: #fff;
+	padding: 1em 0;
+}
+
+.footer-two {
+	background: rgb(2, 108, 179);
+	color: #fff;
+	position: absolute;
+	padding-top: 25px;
+	padding-bottom: 20px;
+}
+
+.text1 {
+	font-size: 15px;
+  	line-height: 30px;
+  	text-align: justify;
+}
+
+h1, h2, h3, h4 {
+  	font-family: 'Fjalla One', sans-serif;
+  	margin-top: 10px;
+}
+
+.enlaceblanco {
+  	font-size: 15px;
+}
+
+hr {
+	margin-top: 10px;
+  	margin-bottom: 15px;
+  	border: 0;
+  	border-top: 2px solid #000000;
+}
+
+.hr {
+	margin-top: 15px;
+  	margin-bottom: 15px;
+  	border: 0;
+  	border-top:1.2px solid #FFF;
+}
+
+.btn-blue{
+	padding-top: 7px;
+  	padding-bottom: 5px;
+  	padding-left: 35px;
+  	padding-right: 35px;
+  	font-size: 23px;
+  	background-color: rgb(2, 108, 179);
+  	color: white;
+  	border:none;
+  	margin-top: 20px;
+  	margin-bottom: 20px;
+}
+
+.tittle-ant{
+	background-color: black;
+  	color: white;
+  	padding-left: 10px;
+  	padding-bottom: 1px;
+  	padding-top: 3px;
+}
+
+.img-ant{
+	margin-bottom: 20px;
+  	border: 2px solid;
+}
+
+.servicios{
+	border-bottom: 4px dashed;
+  	padding-bottom: 5px;
+  	padding-top: 5px;
+}
+
+.btn-white{
+	border: 3px solid white;
+  	background-color: rgba(255, 255, 255, 0);
+  	color: white;
+  	padding: 10px;
+  	font-size: 19px;
+  	margin-top: 20px;
+}
+
+button.btn-white:hover {
+   background-color: rgba(255, 255, 255, 0.29);
+}
+
+.swiperight {
+  left: 100%;
+}
+
+.swipeleft, .swiperight {
+  cursor: pointer;
+  font-size: 90px;
+  line-height: 10px;
+  position: relative;
+  top: 250px;
+}
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+
+/* Estilos del formulario */
+form.contacto {
+    margin: 25px auto 0;
+    width: 440px;
+}
+form.contacto fieldset {
+    background: 0 0 white;
+    border: 1px solid #E1E1E1;
+    box-shadow: 0 0 10px 0 #DADADA;
+    -webkit-box-shadow: 0 0 10px 0 #DADADA;
+    -moz-box-shadow: 0 0 10px 0 #DADADA;
+    padding: 25px;
+}
+form.contacto fieldset > div {
+    clear: both;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+form.contacto fieldset div label {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    margin-top: 5px;
+    text-align: right;
+    text-transform: uppercase;
+    width: 84px;
+}
+form.contacto input[type="text"], form.contacto textarea {
+    background: #F5F5F5;
+    border: 1px solid #E8E8E8;
+    color: #626262;
+    display: block;
+    float: left;
+    padding: 8px;
+    resize: none;
+    width: 265px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+}
+form.contacto input[type="text"]:focus, form.contacto textarea:focus {
+	background: #F9F9F9;
+	border: 1px solid #D3D3D3;
+	outline: none;
+}
+form.contacto .ultimo{
+    margin-bottom: 0;
+    position: relative
+}
+form.contacto button {
+	background: #444444;
+    border: 0 none;
+    color: #FFFFFF;
+    float: right;
+    font-weight: bold;
+    height: 32px;
+    padding: 0 10px;
+    position: relative;
+    text-transform: uppercase;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+}
+form.contacto button:hover{
+	background: #6A6A6A;
+}
+
+/* AJAX Gif y mensajes de exito o fracaso */
+.hide{
+	display: none;
+}
+.ajaxgif{
+    right: 150px;
+    top: 5px;
+}
+.msg{
+    height: 32px;
+  line-height: 32px;
+  right: -155px;
+  text-transform: uppercase;
+  min-width: 121px;
+  /* border: 3px solid white; */
+  /* color: white; */
+  /* padding: 10px; */
+  font-size: 19px;
+  /* margin-top: 20px; */
+}
+.msg_ok{
+	background: rgba(255, 255, 255, 0);
+}
+.msg_error{
+	background: red;
+}
+
+.google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+ }
+ 
+ .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+/*SLIDER*/
+			.captionOrange, .captionBlack
+	        {
+	            color: #fff;
+	            font-size: 20px;
+	            line-height: 30px;
+	            text-align: center;
+	            border-radius: 4px;
+	        }
+	        .captionOrange
+	        {
+	            background: #EB5100;
+	            background-color: rgba(235, 81, 0, 0.6);
+	        }
+	        .captionBlack
+	        {
+	        	font-size:16px;
+	            background: #000;
+	            background-color: rgba(0, 0, 0, 0.4);
+	        }
+	        a.captionOrange, A.captionOrange:active, A.captionOrange:visited
+	        {
+	        	color: #ffffff;
+	        	text-decoration: none;
+	        }
+	        a.captionOrange:hover
+	        {
+	            color: #eb5100;
+	            text-decoration: underline;
+	            background-color: #eeeeee;
+	            background-color: rgba(238, 238, 238, 0.7);
+	        }
+	        .bricon
+	        {
+	            background: url(../img/browser-icons.png);
+	        }
+
+	        .jssorb01 div, .jssorb01 div:hover, .jssorb01 .av
+	        {
+	            filter: alpha(opacity=70);
+	            overflow:hidden;
+	            cursor: pointer;
+	        }
+
+	        .jssorb01 div { background-color: black; }
+
+	        .jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
+
+	        .jssorb01 .av { background-color: #fff; }
+
+	        .jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+
+	        .jssora05l, .jssora05r, .jssora05ldn, .jssora05rdn
+	        {
+	            position: absolute;
+	           	cursor: pointer;
+	           	display: block;
+	            background: url(../img/a17.png) no-repeat;
+	            overflow:hidden;
+	        }
+
+	        .jssora05l { background-position: -10px -40px; }
+
+	        .jssora05r { background-position: -70px -40px; }
+
+	        .jssora05l:hover { background-position: -130px -40px; }
+
+	        .jssora05r:hover { background-position: -190px -40px; }
+
+	        .jssora05ldn { background-position: -250px -40px; }
+
+	        .jssora05rdn { background-position: -310px -40px; }
+/*SLIIDER*/
+
